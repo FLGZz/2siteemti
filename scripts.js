@@ -35,13 +35,17 @@ function carregarConteudo(opcao) {
 </a>
     
     `,
-    changelog: `<h2 style="text-align: left;">ALPHA 0.0.1</h2>
-                 <ul style="text-align: left;">
+    changelog: `<p style="text-align: left;">
+    <h2>ALPHA 0.0.1</h2>
+                 <ul>
                    <li>Adição de menu dinâmico em JS</li>
                    <li>Conteúdo de S.O atualizado</li>
                  </ul>
-    
-    
+    <h2>ALPHA 0.0.2</h2>
+                 <ul>
+                   <li>Site movido para o Github</li>
+                   <li>Agora o site pode ser acessado pela internet</li>
+    </p>
     `,
   };
 
