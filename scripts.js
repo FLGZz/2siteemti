@@ -35,17 +35,18 @@ function carregarConteudo(opcao) {
 </a>
     
     `,
-    changelog: `<p style="text-align: left;">
-    <h2>ALPHA 0.0.1</h2>
-                 <ul>
+    changelog: `
+    <h2 style="text-align: left;">ALPHA 0.0.1</h2>
+                 <ul style="text-align: left;">
                    <li>Adição de menu dinâmico em JS</li>
                    <li>Conteúdo de S.O atualizado</li>
                  </ul>
-    <h2>ALPHA 0.0.2</h2>
-                 <ul>
+    <h2 style="text-align: left;">ALPHA 0.0.2</h2>
+                 <ul style="text-align: left;">
                    <li>Site movido para o Github</li>
                    <li>Agora o site pode ser acessado pela internet</li>
-    </p>
+                 </ul>
+
     `,
   };
 
@@ -55,24 +56,27 @@ function carregarConteudo(opcao) {
 }
 function textNR(opcao) {
   const conteudo = {
-  cont1: `<p style="text-align: left;">
-<h2>Qual é a diferença entre robótica e automação?</h2>
-De maneira geral, a automação é um conceito abrangente que engloba softwares, máquinas e ferramentas projetadas para executar tarefas que normalmente seriam realizadas por pessoas.
+  cont1: `
+<h2 style="text-align: left;">Qual é a diferença entre robótica e automação?</h2>
+<p style="text-align: left;">De maneira geral, a automação é um conceito abrangente que engloba softwares, máquinas e ferramentas projetadas para executar tarefas que normalmente seriam realizadas por pessoas.
 Um exemplo disso são as plataformas de automação de processos empresariais (BPA, ou business process automation em inglês), que são sistemas criados para otimizar as operações internas das organizações.
 Já a automação robótica de processos (RPA, robotic process automation) refere-se a programas de software inteligentes (ou robôs de software) equipados com Inteligência Artificial e capacidade de aprendizado de máquina, que conseguem operar sistemas de computador como se fossem humanos.
-<h2>Quem utiliza a automação robótica de processos?</h2>
-RPA é aplicada na automação de fluxos de trabalho complexos, na infraestrutura e em processos de retaguarda, sendo ideal para grandes corporações com extensos departamentos de recursos humanos, tecnologia da informação e finanças.
+</p>
+<h2 style="text-align: left;">Quem utiliza a automação robótica de processos?</h2>
+<p style="text-align: left;">RPA é aplicada na automação de fluxos de trabalho complexos, na infraestrutura e em processos de retaguarda, sendo ideal para grandes corporações com extensos departamentos de recursos humanos, tecnologia da informação e finanças.
 Automação robótica de processos é Inteligência Artificial?
 Embora ofereça soluções inteligentes, RPA não é sinônimo de IA. RPA consiste em softwares que replicam ações humanas, enquanto a Inteligência Artificial trata da simulação da inteligência humana por meio de softwares de computador.
-E o que é robótica, então?
-A robótica, por sua vez, refere-se especificamente às máquinas capazes de enxergar, sentir, executar ações e, em diferentes níveis, tomar decisões de forma autônoma.
+<p>
+<h2 style="text-align: left;">E o que é robótica, então?</h2>
+<p style="text-align: left;">A robótica, por sua vez, refere-se especificamente às máquinas capazes de enxergar, sentir, executar ações e, em diferentes níveis, tomar decisões de forma autônoma.
 Essa área inclui uma ampla gama de aplicações, como drones e robôs de exploração espacial. No entanto, dentro do contexto de robótica industrial e manufatura, essas máquinas geralmente são classificadas como robôs industriais.
 Robôs industriais são dispositivos físicos utilizados em atividades como inspeção, montagem, embalagem e paletização de produtos físicos.
-Automação e robótica: como se relacionam?
-A automação abrange uma variedade de tecnologias, incluindo programas de software sem componentes físicos, dispositivos PLC (controladores lógicos programáveis) e suas subdivisões, como a robótica, que pode ser considerada uma subcategoria dentro do campo da automação.
-
+</p>
+<h2 style="text-align: left;">Automação e robótica: como se relacionam?</h2>
+<p style="text-align: left;">A automação abrange uma variedade de tecnologias, incluindo programas de software sem componentes físicos, dispositivos PLC (controladores lógicos programáveis) e suas subdivisões, como a robótica, que pode ser considerada uma subcategoria dentro do campo da automação.
+</p>
   
-  </p>`
+ `
 
 }
 const divConteudo = document.getElementById('conteudo');
