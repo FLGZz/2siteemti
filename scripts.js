@@ -10,7 +10,7 @@ function carregarConteudo(opcao) {
     LOGPR: `<h2 style="text-align: center;">Conteúdo de LOGPR</h2><p>Aqui está o material de Lógica de Programação.</p>`,
     NR: `<h2 style="text-align: center;">Conteúdo de N.R</h2><p>Aqui está o material de Noções de Robótica.</p>
     <ul> 
-      <li><button onclick="textNR('contNR1')"></button></li>
+      <li><button class="contbutton" onclick="textNR('contNR1')"></button></li>
     </ul>
     
     `,
