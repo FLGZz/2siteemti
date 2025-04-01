@@ -10,9 +10,10 @@ function carregarConteudo(opcao) {
     LOGPR: `<h2 style="text-align: center;">Conteúdo de LOGPR</h2><p>Aqui está o material de Lógica de Programação.</p>`,
     NR: `<h2 style="text-align: center;">Conteúdo de N.R</h2><p>Aqui está o material de Noções de Robótica.</p>
     <ul> 
-      <li><button onclick="textNR('cont1')">N.R</button></li>
+      <li><button onclick="textNR('contNR1')"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmemeexplicado.com%2Fo-que-e-o-meme-sale-fulbito%2F&psig=AOvVaw3RaADBsZZE9-lsfp8B_BQ-&ust=1743612351973000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCoqamkt4wDFQAAAAAdAAAAABAJ" alt="Descrição da imagem">
+  Clique aqui
+</button></li>
     </ul>
-</a>
     
     `,
     changelog: `
@@ -36,7 +37,7 @@ function carregarConteudo(opcao) {
 }
 function textNR(opcao) {
   const conteudo = {
-  cont1: `
+  contNR1: `
 <h2>Qual é a diferença entre robótica e automação?</h2>
 <p>De maneira geral, a automação é um conceito abrangente que engloba softwares, máquinas e ferramentas projetadas para executar tarefas que normalmente seriam realizadas por pessoas.
 Um exemplo disso são as plataformas de automação de processos empresariais (BPA, ou business process automation em inglês), que são sistemas criados para otimizar as operações internas das organizações.
