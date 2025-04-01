@@ -10,9 +10,7 @@ function carregarConteudo(opcao) {
     LOGPR: `<h2 style="text-align: center;">Conteúdo de LOGPR</h2><p>Aqui está o material de Lógica de Programação.</p>`,
     NR: `<h2 style="text-align: center;">Conteúdo de N.R</h2><p>Aqui está o material de Noções de Robótica.</p>
     <ul> 
-      <li><button onclick="textNR('contNR1')"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmemeexplicado.com%2Fo-que-e-o-meme-sale-fulbito%2F&psig=AOvVaw3RaADBsZZE9-lsfp8B_BQ-&ust=1743612351973000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCoqamkt4wDFQAAAAAdAAAAABAJ" alt="Descrição da imagem">
-  Clique aqui
-</button></li>
+      <li><button onclick="textNR('contNR1')"></button></li>
     </ul>
     
     `,
