@@ -26,24 +26,32 @@ body {
   overflow-y: auto;
 }
 
-.meu-botao {
+.contbutton {
   background-color: #4CAF50; /* Cor de fundo */
   color: white; /* Cor do texto */
-  padding: 10px 20px; /* Espaçamento interno */
+  padding: 5px 10px; /* Espaçamento interno */
   border: none; /* Remove borda */
   border-radius: 5px; /* Bordas arredondadas */
   cursor: pointer; /* Muda o cursor para "pointer" */
   font-size: 16px; /* Tamanho da fonte */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
-
 .contbutton:hover {
-  background-color: #4CAF50; /* Cor de fundo */
+  background-color: #017009; /* Cor de fundo */
   color: white; /* Cor do texto */
-  padding: 10px 20px; /* Espaçamento interno */
-  border: none; /* Remove borda */
+}
+
+.button {
+  background-color: #00000000; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 10px 10px; /* Espaçamento interno */
+  border: 1px solid rgb(255, 255, 255); /* Remove borda */
   border-radius: 5px; /* Bordas arredondadas */
   cursor: pointer; /* Muda o cursor para "pointer" */
   font-size: 16px; /* Tamanho da fonte */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+.button:hover {
+  background-color: #ffffff;
+  color: black;
 }
