@@ -45,9 +45,9 @@ function carregarConteudo(opcao) {
                  </ul>
     <h2>ALPHA 0.0.3</h2>
                  <ul>
-                   <li></li>
-                   <li></li>
-                   <li></li>
+                   <li>Melhorias na interface</li>
+                   <li>Adição de novos conteúdos</li>
+                   <li>Otimização para o uso em dispositivos móveis</li>
                  </ul>
     `,
   };
@@ -243,3 +243,4 @@ DDR3: As velocidades começam em torno de 800 MT/s e podem ir até 2133 MT/s (al
 const divConteudo = document.getElementById('conteudo');
   divConteudo.innerHTML = conteudo[opcao] || "<h2>Conteúdo não encontrado!</h2>";
 }
+
