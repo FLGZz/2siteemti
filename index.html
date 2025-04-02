@@ -5,45 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Site 2º EMTI</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Estilo inicial para ocultar o topo */
-    .topo {
-      position: fixed;
-      top: -50px; /* Move para fora da tela */
-      width: 100%;
-      height: 50px;
-      background-color: black;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      color: white;
-      transition: top 0.3s ease; /* Transição suave */
-    }
-
-    /* Torna o topo visível ao passar o mouse */
-    .mostrar-topo {
-      top: 0; /* Move para posição visível */
-    }
-  </style>
+  
   <script>
-
     function carregarConteudo(opcao) {
       const conteudo = {
         MENU: `
         <h1>Seja bem-vindo!</h1>
-        <p>Escolha o conteúdo desejado
-        </p>
+        <p>Escolha o conteúdo desejado</p>
         <p>Acesse o site de meus amigos também! ;)</p>
         <a href="https://gabs-kirio.github.io/sitejapones2/" target="_blank">https://gabs-kirio.github.io/sitejapones2/</a><br>
         <a href="https://1tecno.github.io/1tecno/" target="_blank">https://1tecno.github.io/1tecno/</a><br>
         <a href="https://1tecno.github.io/teste2/" target="_blank">https://1tecno.github.io/teste2/</a>
-        `,}
-      }
-        const divConteudo = document.getElementById('conteudo');
-        divConteudo.innerHTML = conteudo[opcao] || "<h2>Conteúdo não encontrado!</h2>";
-    
-    
-    </script>
+        `,
+      };
+      const divConteudo = document.getElementById('conteudo');
+      divConteudo.innerHTML = conteudo[opcao] || "<h2>Conteúdo não encontrado!</h2>";
+    }
+  </script>
 </head>
 <body>
   <div class="topo" id="topo">
@@ -62,28 +40,16 @@
     <p>n deu certo</p>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-            carregarConteudo('MENU');
-        });
-    
+        carregarConteudo('MENU');
+      });
     </script>
   </div>
 
   <div class="rodape">
-    <p>Made by Felipe - 2º Ano EMTI | 0.0.2 ALPHA</p>
-    <button class="button" onclick="carregarConteudo('changelog')">Changelog</button>
+    <p class="creditos">Made by Felipe - 2º Ano EMTI | 0.0.3 ALPHA</p>
+    <button class="button2" onclick="carregarConteudo('changelog')">Changelog</button>
   </div>
 
-  <script>
-    // Detecta movimento do mouse na área superior da tela
-    document.addEventListener("mousemove", (event) => {
-      const topo = document.getElementById("topo");
-      if (event.clientY <= 50) { // Se o mouse estiver nos primeiros 50px da tela
-        topo.classList.add("mostrar-topo");
-      } else {
-        topo.classList.remove("mostrar-topo");
-      }
-    });
-  </script>
   <script src="scripts.js"></script>
 </body>
 </html>
