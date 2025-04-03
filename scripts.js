@@ -9,7 +9,25 @@ function carregarConteudo(opcao) {
     <a href="https://gabs-kirio.github.io/sitejapones2/" target="_blank">https://gabs-kirio.github.io/sitejapones2/</a><br>
     <a href="https://1tecno.github.io/1tecno/" target="_blank">https://1tecno.github.io/1tecno/</a><br>
     <a href="https://1tecno.github.io/teste2/" target="_blank">https://1tecno.github.io/teste2/</a>
-    `,
+    <h1>Novidades</h1>
+    <p>A seguir tudo que foi alterado neste site com o passar das versões! No momento, estamos na versão 0.0.3.
+    <h2>v0.0.1</h2>
+                 <ul>
+                   <li>Adição de menu dinâmico em JS</li>
+                   <li>Conteúdo de S.O atualizado</li>
+                 </ul>
+    <h2>v0.0.2</h2>
+                 <ul>
+                   <li>Site movido para o Github</li>
+                   <li>Agora o site pode ser acessado pela internet</li>
+                 </ul>
+    <h2>v0.0.3</h2>
+                 <ul>
+                   <li>Melhorias na interface</li>
+                   <li>Adição de novos conteúdos</li>
+                   <li>Otimização para o uso em dispositivos móveis</li>
+                 </ul>
+     `,
     AMC: `<h2 style="text-align: center;">Conteúdo de AMC</h2><p>Aqui está o material de Arquitetura e Manutenção de Computadores.</p>
      <ul> 
       <li><button class="contbutton" onclick="textcont('contAMC1')">Memória RAM</button></li>
