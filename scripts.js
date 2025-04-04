@@ -6,7 +6,7 @@ function carregarConteudo(opcao) {
     <p>Escolha o conteúdo desejado
     </p>
     <p>Acesse o site de meus amigos também! ;)</p>
-    <a href="https://gabs-kirio.github.io/MochilavirtualGabriel/" target="_blank">https://gabs-kirio.github.io/sitejapones2/</a><br>
+    <a href="https://gabs-kirio.github.io/MochilavirtualGabriel/" target="_blank">https://gabs-kirio.github.io/MochilavirtualGabriel/</a><br>
     <a href="https://1tecno.github.io/1tecno/" target="_blank">https://1tecno.github.io/1tecno/</a><br>
     <a href="https://1tecno.github.io/teste2/" target="_blank">https://1tecno.github.io/teste2/</a>
      `,
