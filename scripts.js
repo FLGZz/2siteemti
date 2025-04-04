@@ -294,7 +294,8 @@ contGT1: `
     // Conteúdos de POO JAVA
 contPOOJAVA1: `
 <p>No exercício da Aula 9B do curso de POO e Java, o instrutor nos ensina a criar uma aplicação prática em Java onde são definidas classes que representam entidades (objetos) de um determinado problema, aplicando os conceitos de encapsulamento, herança e polimorfismo para modelar as relações entre esses objetos.</p><br>
-<img src="./poojavaex1.png" />Exemplo
+<a href="https://www.youtube.com/watch?v=xgqrkCcH6Ko&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=19" target="_blank">https://www.youtube.com/watch?v=xgqrkCcH6Ko&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY&index=19</a>
+ <img src="./poojavaex1.png" />Exemplo
 <br>
 <p>Basicamente, o código cria uma classe chamada “pessoa”, uma classe chamada “livro” e uma interface.
  Ao iniciar o código, é mostrado informações sobre o livro escolhido, como quem é o autor, quantas páginas o livro 
