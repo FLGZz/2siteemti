@@ -1,56 +1,308 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site 2º EMTI</title>
-  <link rel="stylesheet" href="styles.css">
-  
-  <script>
-    function carregarConteudo(opcao) {
-      const conteudo = {
-        MENU: `
-        <h1>Seja bem-vindo!</h1>
-        <p>Escolha o conteúdo desejado</p>
-        <p>Acesse o site de meus amigos também! ;)</p>
-        <a href="https://gabs-kirio.github.io/sitejapones2/" target="_blank">https://gabs-kirio.github.io/sitejapones2/</a><br>
-        <a href="https://1tecno.github.io/1tecno/" target="_blank">https://1tecno.github.io/1tecno/</a><br>
-        <a href="https://1tecno.github.io/teste2/" target="_blank">https://1tecno.github.io/teste2/</a>
-        `,
-      };
-      const divConteudo = document.getElementById('conteudo');
-      divConteudo.innerHTML = conteudo[opcao] || "<h2>Conteúdo não encontrado!</h2>";
-    }
-  </script>
+  <title>Caderno Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topo" id="topo">
-    <button class="button2" onclick="carregarConteudo('MENU')">MENU</button>
-    <button class="button2" onclick="carregarConteudo('AMC')">AMC</button>
-    <button class="button2" onclick="carregarConteudo('PROGWEB')">PROG WEB</button>
-    <button class="button2" onclick="carregarConteudo('HTMLCSS')">HTML/CSS</button>
-    <button class="button2" onclick="carregarConteudo('POOJAVA')">POO JAVA</button>
-    <button class="button2" onclick="carregarConteudo('SO')">S.O</button>
-    <button class="button2" onclick="carregarConteudo('LOGPR')">LOGPR</button>
-    <button class="button2" onclick="carregarConteudo('NR')">N.R</button>
-    <button class="button2" onclick="carregarConteudo('GT')">G.T</button>
-  </div>
+  <header>
+    <div class="header-content">
+      <h1>Seja bem-vindo!</h1>
+      <p>Escolha abaixo o conteúdo desejado.</p>
+    </div>
+    <button id="menu-button">☰</button>
+  <nav id="menu">
+    <ul>
+      <li><a href="#" id="sobre-site">Sobre</a>
+          <span id="site" style="display: none;"><p>Esse site foi criado para organizar as aulas do EMTI. Caso tenha interesse, visite o site de meus colegas!</p><br>
+            <a style="font-size: 12px;" href="https://gabs-kirio.github.io/MochilavirtualGabriel/" target="_blank">https://gabs-kirio.github.io/MochilavirtualGabriel/</a><br>
+            <a style="font-size: 12px;" href="https://1tecno.github.io/1tecno/" target="_blank">https://1tecno.github.io/1tecno/</a><br>
+            <a style="font-size: 12px;" href="https://1tecno.github.io/teste2/" target="_blank">https://1tecno.github.io/teste2/</a>
+          </li>
+      <li><a href="#" id="contact-link">Contato</a>
+          <span id="email" style="display: none;">Email da sala: 1anotecnico2024@gmail.com</span></li>
+    </ul>
+  </nav>
+  </header>
+  
+  <main>
+    <!-- Área do carrossel -->
+    <div class="carousel-container" id="carousel-container">
+      <button class="carousel-button left" id="prev">&lt;</button>
+      <div class="carousel">
+        <div class="carousel-item" data-target="arquitetura">
+          <img src="cpu.svg" alt="Ícone de Arquitetura" width="100" height="100"><br>
+          Arquitetura e Manutenção de Computadores
+        </div>
 
-  <div class="conteudo" id="conteudo">
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        carregarConteudo('MENU');
-      });
-    </script>
-  </div>
+        <div class="carousel-item" data-target="programacao">
+          <img src="web.svg" alt="Ícone de Programação Web" width="100" height="100"><br>
+          Programação Web
+        </div>
 
-  <div class="rodape">
-    <p class="creditos">Made by Felipe - 2º Ano EMTI | v0.0.4</p>
-  </div>
+        <div class="carousel-item" data-target="html-css">
+          <img src="html.svg" alt="Ícone de HTML e CSS" width="100" height="100"><br>
+          HTML e CSS
+        </div>
 
-  <script src="scripts.js"></script>
-</body>
-</html>
-  <script src="scripts.js"></script>
+        <div class="carousel-item" data-target="poo-java">
+          <img src="java.svg" alt="Ícone de POO e Java" width="100" height="100"><br>
+          POO e Java
+        </div>
+
+        <div class="carousel-item" data-target="sistemas">
+          <img src="sistem.svg" alt="Ícone de Sistemas Operacionais" width="100" height="100"><br>
+          Sistemas Operacionais
+        </div>
+
+        <div class="carousel-item" data-target="logica">
+          <img src="code.svg" alt="Ícone de Lógica de Programação" width="100" height="100"><br>
+          Lógica de Programação
+        </div>
+
+        <div class="carousel-item" data-target="robotica">
+          <img src="robot.svg" alt="Ícone de Noções de Robótica" width="100" height="100"><br>
+          Noções de Robótica
+        </div>
+
+        <div class="carousel-item" data-target="gestao">
+          <img src="clock.svg" alt="Ícone de Gestão de Tempo" width="100" height="100"><br>
+          Gestão de Tempo
+        </div>
+      </div>
+      <button class="carousel-button right" id="next">&gt;</button>
+    </div>
+
+    <!-- Overlay com a aba de conteúdo -->
+    <section id="overlay-content">
+      <button id="back-button">
+        <img src="back.svg" alt="Voltar">
+      </button>
+      <div id="overlay-inner-content">
+        <!-- Conteúdo de cada matéria embutido -->
+        <div class="content" id="arquitetura">
+          <h3>Arquitetura e Manutenção de Computadores</h3>
+          <p>
+            Conteúdo sobre hardware, componentes, montagem e manutenção preventiva.  
+            Informações sobre placas-mãe, processadores, memórias e diagnóstico de falhas.
+          </p>
+          <button class="accordion-button">Memória RAM</button>
+          <div class="accordion-content">
+            <header>
+              <h1>O que é memória RAM?</h1>
+            </header>
+            <main>
+              <section>
+                <p>
+                  A Memória de Acesso Aleatório, ou RAM, é uma peça do computador que funciona como
+                  um armazenamento de dados temporários. Quando você abre uma foto, um programa ou mais
+                  uma aba no navegador, os dados não vão direto para o disco rígido do PC junto dos grandes
+                  arquivos. Em vez disso, ficam armazenados temporariamente na memória RAM, garantindo mais
+                  eficiência e rapidez no processamento.
+                </p>
+              </section>
+    
+              <section>
+                <h2>Tipos de Memória RAM</h2>
+                <ul>
+                  <li>
+                    <h3>DRAM (Dynamic RAM)</h3>
+                    <p>
+                      Armazena dados em capacitores que precisam ser recarregados periodicamente. Exemplos
+                      incluem DDR, DDR2, DDR3, DDR4 e DDR5.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>SRAM (Static RAM)</h3>
+                    <p>
+                      Não precisa ser recarregada constantemente, tornando-se mais rápida, porém mais cara.
+                      Utilizada em caches de processadores.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>SDRAM (Synchronous DRAM)</h3>
+                    <p>
+                      Sincronizada com o clock do processador para otimizar a comunicação. DDR é um exemplo
+                      desse tipo de memória.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>DDR (Double Data Rate) SDRAM</h3>
+                    <p>
+                      Transfere dados duas vezes por ciclo de clock. Há diversas gerações, como DDR, DDR2, DDR3,
+                      DDR4 e DDR5.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>LPDDR (Low Power DDR)</h3>
+                    <p>
+                      Desenvolvida para dispositivos móveis, consumindo menos energia. Exemplos incluem LPDDR3,
+                      LPDDR4 e LPDDR5.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>GDDR (Graphics DDR)</h3>
+                    <p>
+                      Otimizada para placas de vídeo, garantindo alto desempenho gráfico. Exemplos incluem GDDR5
+                      e GDDR6.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>ECC RAM (Error-Correcting Code RAM)</h3>
+                    <p>
+                      Detecta e corrige erros de memória, sendo ideal para servidores.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>3D XPoint</h3>
+                    <p>
+                      Tecnologia desenvolvida pela Intel e Micron, situada entre RAM e SSDs. Um exemplo é o Intel
+                      Optane.
+                    </p>
+                  </li>
+                </ul>
+              </section>
+    
+              <section>
+                <h2>Gerações de DDR</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Geração</th>
+                      <th>Velocidade</th>
+                      <th>Tensão</th>
+                      <th>Características</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>DDR</td>
+                      <td>Até 400 MT/s</td>
+                      <td>2,5V</td>
+                      <td>Primeira versão com "double data rate".</td>
+                    </tr>
+                    <tr>
+                      <td>DDR2</td>
+                      <td>400 - 1066 MT/s</td>
+                      <td>1,8V</td>
+                      <td>Maior largura de banda, menor consumo.</td>
+                    </tr>
+                    <tr>
+                      <td>DDR3</td>
+                      <td>800 - 2133 MT/s</td>
+                      <td>1,5V</td>
+                      <td>Melhor eficiência energética e desempenho.</td>
+                    </tr>
+                    <tr>
+                      <td>DDR4</td>
+                      <td>1600 - 3200 MT/s</td>
+                      <td>1,2V</td>
+                      <td>Maior densidade e largura de banda.</td>
+                    </tr>
+                    <tr>
+                      <td>DDR5</td>
+                      <td>4800 - 8400 MT/s</td>
+                      <td>1,1V</td>
+                      <td>Alta capacidade e maior desempenho.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+    
+              <section>
+                <h2>Como identificar a geração da RAM?</h2>
+                <ol>
+                  <li><strong>Nome do modelo:</strong> O part number geralmente indica a geração da RAM, como DDR3-1600 ou DDR5-4800.</li>
+                  <li><strong>Velocidade:</strong> Cada geração tem uma faixa de velocidade específica.</li>
+                  <li><strong>Tensão de operação:</strong> Cada geração opera em uma voltagem diferente.</li>
+                  <li><strong>Formato físico:</strong> A posição dos pinos no módulo ajuda a evitar erros de instalação.</li>
+                  <li><strong>Compatibilidade:</strong> A geração da RAM precisa ser suportada pela placa-mãe e pelo processador.</li>
+                </ol>
+              </section>
+            </main>
+          </div>
+        </div>
+        
+        <div class="content" id="programacao">
+          <h3>Programação Web</h3>
+          <p>
+            Conteúdo sobre desenvolvimento web, linguagens, frameworks e boas práticas para criação de sites modernos.
+          </p>
+        </div>
+        
+        <div class="content" id="html-css">
+          <h3>HTML e CSS</h3>
+          <p>
+            Fundamentos de HTML para estruturar páginas e CSS para estilização. Exemplos de layout, responsividade e design.
+          </p>
+        </div>
+        
+        <div class="content" id="poo-java">
+          <h3>POO e Java</h3>
+          <p>
+            Conceitos de Programação Orientada a Objetos com Java, incluindo classes, objetos, herança e encapsulamento.
+          </p>
+        </div>
+        
+        <div class="content" id="sistemas">
+          <h3>Sistemas Operacionais</h3>
+          <p>
+            Conceitos dos principais sistemas operacionais, gerenciamento de recursos e fundamentos de segurança.
+          </p>
+        </div>
+        
+        <div class="content" id="logica">
+          <h3>Lógica de Programação</h3>
+          <p>
+            Conceitos em algoritmos, estruturas condicionais e laços de repetição para resolução de problemas.
+          </p>
+        </div>
+        
+        <div class="content" id="robotica">
+          <h3>Noções de Robótica</h3>
+          <p>
+            Fundamentos da robótica, incluindo sensores, atuadores e a integração entre hardware e software.
+          </p>
+          <button class="accordion-button">Robótica x Automação</button>
+          <div class="accordion-content">
+            <header>Qual é a diferença entre robótica e automação?</header>
+<p>De maneira geral, a automação é um conceito abrangente que engloba softwares, máquinas e ferramentas projetadas para executar tarefas que normalmente seriam realizadas por pessoas.
+Um exemplo disso são as plataformas de automação de processos empresariais (BPA, ou business process automation em inglês), que são sistemas criados para otimizar as operações internas das organizações.
+Já a automação robótica de processos (RPA, robotic process automation) refere-se a programas de software inteligentes (ou robôs de software) equipados com Inteligência Artificial e capacidade de aprendizado de máquina, que conseguem operar sistemas de computador como se fossem humanos.
+</p>
+<h2>Quem utiliza a automação robótica de processos?</h2>
+<p>RPA é aplicada na automação de fluxos de trabalho complexos, na infraestrutura e em processos de retaguarda, sendo ideal para grandes corporações com extensos departamentos de recursos humanos, tecnologia da informação e finanças.
+Automação robótica de processos é Inteligência Artificial?
+Embora ofereça soluções inteligentes, RPA não é sinônimo de IA. RPA consiste em softwares que replicam ações humanas, enquanto a Inteligência Artificial trata da simulação da inteligência humana por meio de softwares de computador.
+<p>
+<h2>E o que é robótica, então?</h2>
+<p>A robótica, por sua vez, refere-se especificamente às máquinas capazes de enxergar, sentir, executar ações e, em diferentes níveis, tomar decisões de forma autônoma.
+Essa área inclui uma ampla gama de aplicações, como drones e robôs de exploração espacial. No entanto, dentro do contexto de robótica industrial e manufatura, essas máquinas geralmente são classificadas como robôs industriais.
+Robôs industriais são dispositivos físicos utilizados em atividades como inspeção, montagem, embalagem e paletização de produtos físicos.
+</p>
+<h2>Automação e robótica: como se relacionam?</h2>
+<p>A automação abrange uma variedade de tecnologias, incluindo programas de software sem componentes físicos, dispositivos PLC (controladores lógicos programáveis) e suas subdivisões, como a robótica, que pode ser considerada uma subcategoria dentro do campo da automação.
+</p>
+          </div>
+        </div>
+        
+        <div class="content" id="gestao">
+          <h3>Gestão de Tempo</h3>
+          <p>
+            Estratégias, ferramentas e metodologias para melhorar a organização pessoal e o gerenciamento de tarefas.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Feito por Felipe</p>
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
